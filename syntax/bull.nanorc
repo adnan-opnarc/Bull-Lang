@@ -1,0 +1,22 @@
+syntax "bull" "\.bl$"
+
+## Comments
+color brightwhite "//.*$"
+color brightwhite start="/\*" end="\*/"
+
+## Strings
+color brightwhite start="\"" end="\""
+
+## Keywords
+color brightblue "\<(print|input|class|struct|int|s8|s16|s32|s64|u8|u16|u32|u64|glass|bool|char|matrix|array|map|call|rc|kernif|kernelse|else|if|return|true|false|this|var|new|len|null|while|for|read|write|open)\>"
+
+## Operators
+color brightyellow "(\+\+|--|\+=|-=|\*=|/=|%=|&=|\|=|\^=|==|!=|<=|>=|&&|\|\||<<|>>|->)"
+color brightyellow "[-+*/%&|^~!<>]"
+
+## Numbers (decimal and hex)
+color brightred "\<[0-9][0-9_]*\>"
+color brightred "\<0[xX][0-9a-fA-F][0-9a-fA-F_]*\>"
+
+## Crate directives
+color green "\[[^]]*\]"

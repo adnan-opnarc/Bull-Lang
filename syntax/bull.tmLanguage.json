@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Bull",
+  "scopeName": "source.bull",
+  "fileTypes": [".bl"],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#crates"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.bull",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.bull",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.bull",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.bull",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+            "name": "keyword.control.bull",
+            "match": "\\b(?:print|input|class|struct|int|s8|s16|s32|s64|u8|u16|u32|u64|glass|bool|char|matrix|array|map|call|rc|kernif|kernelse|else|if|return|true|false|this|var|new|len|null|while|for|read|write|open)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.bull",
+      "match": "\\b(?:0[xX][0-9a-fA-F][0-9a-fA-F_]*|[0-9][0-9_]*)\\b"
+    },
+    "crates": {
+      "name": "entity.name.type.bull",
+      "match": "\\[[^\\]]+\\]"
+    },
+    "operators": {
+      "name": "keyword.operator.bull",
+      "match": "\\+\\+|--|\\+=|-=|\\*=|/=|%=|&=|\\|=|\\^=|==|!=|<=|>=|&&|\\|\\||<<|>>|->|[+\\-*/%&|^~!<>=]"
+    }
+  }
+}
