@@ -89,4 +89,4 @@ make install      # Install to /usr/local/bin
 
 ## License
 
-(c) 2026 OpenArc-1
+(c) 2026 adnan-opnarc

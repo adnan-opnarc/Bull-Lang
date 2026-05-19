@@ -1,5 +1,5 @@
 # Bull Compiler Build System
-# OpenArc-1 BUll Compiler --- (c) 2025-2026
+# adnan-opnarc BUll Compiler --- (c) 2025-2026
 
 CC = gcc
 CXX = g++

@@ -134,7 +134,7 @@ int main() {
 ### Default `bpkg.toml`
 ```toml
 [mirrors]
-official = "https://github.com/OpenArc-1"
+official = "https://github.com/adnan-opnarc"
 ```
 
 ---
@@ -150,7 +150,7 @@ bpkg update             # create/update package.lst registry
 ```
 
 ### Install Flow
-1. Read mirror URL from `bpkg.toml` → `bullfc.toml [mirrors]` → fallback `https://github.com/OpenArc-1`
+1. Read mirror URL from `bpkg.toml` → `bullfc.toml [mirrors]` → fallback `https://github.com/adnan-opnarc`
 2. `git clone <mirror>/<name>.git` into `crates/<name>/`
 3. Run `bullc -- bullfc.toml -ar` inside the cloned crate to build `.a`
 4. Result: `crates/<name>/build/<name>.a`
@@ -159,7 +159,7 @@ bpkg update             # create/update package.lst registry
 ```
 bpkg.toml [mirrors]              # checked first
 → bullfc.toml [mirrors]          # checked second
-→ https://github.com/OpenArc-1  # default fallback
+→ https://github.com/adnan-opnarc  # default fallback
 ```
 
 ---

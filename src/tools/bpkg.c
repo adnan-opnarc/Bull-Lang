@@ -7,7 +7,7 @@
 #include "color.h"
 
 #define VERSION "1.0.0"
-#define OFFICIAL_MIRROR "https://github.com/OpenArc-1"
+#define OFFICIAL_MIRROR "https://github.com/adnan-opnarc"
 
 static void print_help(const char *prog) {
     fprintf(stderr, "bpkg - Bull Package Manager v%s\n", VERSION);
@@ -20,7 +20,7 @@ static void print_help(const char *prog) {
     fprintf(stderr, "  --version         Show version\n");
     fprintf(stderr, "\nMirror config (bpkg.toml or bullfc.toml [mirrors]):\n");
     fprintf(stderr, "  [mirrors]\n");
-    fprintf(stderr, "  default = \"https://github.com/OpenArc-1\"\n");
+    fprintf(stderr, "  default = \"https://github.com/adnan-opnarc\"\n");
 }
 
 static void print_version(void) {

@@ -251,7 +251,7 @@ static int create_project(const char *project_name) {
     printf("  Creating bpkg.toml...\n");
     const char *bpkg_content = 
         "[mirrors]\n"
-        "official = \"https://github.com/OpenArc-1\"\n";
+        "official = \"https://github.com/adnan-opnarc\"\n";
     
     char bpkg_file[512];
     if (use_current) {
